@@ -8,16 +8,16 @@
 <body>
     <h1>Student details</h1>
 
-    <form action="">
+    <form >
 
         <label>First Name</label>
-        <input type="text">
+        <input type="text" name="fname" required>
         <label>Last Name</label>
-        <input type="text"><br><br>
+        <input type="text" name="lname" required><br><br>
         <label>Age</label>   
-        <input type="text">        
+        <input type="text" name="age" required>        
         <label>Gender</label>
-        <input type="radio" name="gender" id="male" value="male">
+        <input type="radio" name="gender" id="male" value="male" required>
         <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="female">
         <label for="female">Female</label>
@@ -25,32 +25,34 @@
         <label for="other">other</label><br><br>
         
         <label for="exp">Experience:</label>
-        <select name="exp" id="exp">
+        <select name="exp" id="exp" required>
         <option value="5t">0-5 yrs </option>
         <option value="10t">5-10 yrs</option>
         <option value="15t">10-15 yrs</option>
         <option value="15tp">15+ yrs</option>
         </select>
 
-        <label for="skills">Skills:</label>
-        <select name="skills" id="skills">
-        <option value="java">Java</option>
-        <option value="python">Python</option>
-        <option value="c">C</option>
-        <option value="c++">C++</option>
-        </select><br><br>
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" id="java" value="java" required>
+        <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="css" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skills" id="c++" value="c++">
+        <label for="c++">c++</label>
+        <input type="checkbox" name="skills" id="python" value="python">
+        <label for="python">python</label><br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
 
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
 
         <label for="comments">Comments</label>
         <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
 
         <button type="button">clear</button>
-        <button type="submit">submit</button>
+        <button type="submit" value="submit">submit</button>
     </form>
 </body>
 </html>
